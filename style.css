@@ -1,0 +1,51 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif; /* Define a fonte usada no corpo da página */
+    background: linear-gradient(to right, #065244, #ACB6E5); /* Fundo em gradiente da esquerda para a direita */
+    display: flex; /* Define o layout como flexbox para centralizar elementos */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    height: 100vh; /* Define a altura do body igual à altura da tela */
+    margin: 0; /* Remove a margem padrão do body */
+}
+
+form {
+    background: #fff; /* Fundo branco para o formulário */
+    padding: 20px; /* Espaçamento interno dentro do formulário */
+    border-radius: 12px; /* Cantos arredondados do formulário */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra leve atrás do formulário */
+    text-align: center; /* Centraliza o texto dentro do formulário */
+}
+
+input, button {
+    margin-top: 10px; /* Espaçamento acima de cada input e botão */
+    padding: 10px; /* Espaçamento interno dentro de inputs e botão */
+    border-radius: 8px; /* Cantos arredondados para inputs e botão */
+    border: 1px solid #ccc; /* Borda cinza clara ao redor de inputs e botão */
+    width: 100%; /* Faz input e botão ocuparem toda a largura do formulário */
+}
+
+#saudacao {
+    margin-top: 10px;      /* Espaço entre o formulário e a saudação */
+    font-size: 18px;        /* Tamanho da fonte do texto da saudação */
+    font-weight: bold;      /* Deixa o texto em negrito */
+    color: #2a9d8f;         /* Cor azul-esverdeada para o texto */
+}
+
+button {
+    background-color: #4CAF50; /* Cor de fundo verde para o botão */
+    color: white; /* Cor do texto do botão */
+    font-weight: bold; /* Texto do botão em negrito */
+    cursor: pointer; /* Cursor muda para mãozinha ao passar sobre o botão */
+    border: none; /* Remove a borda padrão do botão */
+}
+
+button:hover {
+    background-color: #45a049; /* Muda a cor do botão quando o mouse passa por cima */
+}
+
+p {
+    margin-top: 15px; /* Espaço acima do parágrafo */
+    font-size: 18px; /* Tamanho da fonte do parágrafo */
+    font-weight: bold; /* Texto do parágrafo em negrito */
+    color: #333; /* Cor cinza escura para o texto */
+}
