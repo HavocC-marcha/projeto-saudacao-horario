@@ -7,28 +7,31 @@
 </head>
 <body>
 
-<form method="post">
-    Digite o horário (0-23): 
-    <input type="time" name="horario">
-    <button type="submit">Enviar</button>
-
 <div id="saudacao">
 
 <?php
 
-if (isset($_POST['horario'])) {
-    $horario = $_POST['horario'];
+// Define o fuso horário do servidor, ajuste se necessário
+date_default_timezone_set('America/Sao_Paulo');
 
-if($horario>= 6 && $horario < 12){
+// Pega a hora atual do servidor
+$horaAtual = date("H"); // retorna a hora no formato 24h (0-23)
+
+// Exibe a saudação de acordo com a hora
+if ($horaAtual >= 6 && $horaAtual < 12) {
     echo "Bom dia!<br>";
-}elseif($horario >= 12 && $horario < 18){
-    echo "Boa tarde!<br>";
-}elseif($horario >= 18 && $horario < 24){
-    echo "Boa noite!<br>";
-}else {
-    echo "Boa madrugada!<br>";
-    }
+} elseif ($horaAtual >= 12 && $horaAtual < 18) {
+    echo "Boa Tarde!<br>";
+} elseif ($horaAtual >= 18 && $horaAtual < 24) {
+    echo "Boa Noite!<br>";
+} else {
+    echo "Boa Madrugada!<br>";
 }
+
+// Mostra a hora
+
+echo "Agora são " . date("H:i") . " horas";
+
 ?>
 </div>
 </form>
